@@ -13,15 +13,15 @@
 # limitations under the License.
 #
 
-VENDOR_BLOBS ?= vendor/bluboo/pri6750_66t_m/pri6750_66t_m-vendor.mk
+VENDOR_BLOBS ?= vendor/doogee/y6max/y6max-vendor.mk
 $(call inherit-product-if-exists, $(VENDOR_BLOBS))
 
-MTK_PROJECT_CONFIG ?= device/bluboo/pri6750_66t_m/ProjectConfig.mk
+MTK_PROJECT_CONFIG ?= device/doogee/y6max/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/bluboo/pri6750_66t_m/prebuilts/kernel
+	LOCAL_KERNEL := device/doogee/y6max/prebuilts/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -67,8 +67,8 @@ PRODUCT_COPY_FILES += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960

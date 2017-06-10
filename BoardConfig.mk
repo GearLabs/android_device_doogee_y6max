@@ -15,7 +15,7 @@
 
 TARGET_BOARD_PLATFORM := mt6750
 
-DEVICE_PATH := device/bluboo/pri6750_66t_m
+DEVICE_PATH := device/doogee/y6max
 
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
@@ -28,14 +28,17 @@ MTK_INTERNAL_CDEFS += $(foreach t,$(AUTO_ADD_GLOBAL_DEFINE_BY_NAME_VALUE),$(if $
 COMMON_GLOBAL_CFLAGS += $(MTK_INTERNAL_CDEFS)
 COMMON_GLOBAL_CPPFLAGS += $(MTK_INTERNAL_CDEFS)
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := y6max, Y6_Max, Y6Max
+
 # Kernel informations
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 enforcing=0 androidboot.selinux=permissive
-BOARD_MKBOOTIMG_ARGS := --board 1478934223 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
+BOARD_MKBOOTIMG_ARGS := --board 1489390134 --ramdisk_offset 0x04f88000 --second_offset 0x00e88000 --tags_offset 0x03f88000
 
 # Kernel properties
-TARGET_PREBUILT_KERNEL := device/bluboo/pri6750_66t_m/prebuilts/kernel
+TARGET_PREBUILT_KERNEL := device/doogee/y6max/prebuilts/kernel
 
 TARGET_BOOTLOADER_BOARD_NAME := pri6750_66t_m
 
@@ -55,7 +58,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # TWRP
-DEVICE_RESOLUTION := 720x1280
-DEVICE_SCREEN_WIDTH := 720
-DEVICE_SCREEN_HEIGHT := 1280
+DEVICE_RESOLUTION := 1080x1920
+DEVICE_SCREEN_WIDTH := 1080
+DEVICE_SCREEN_HEIGHT := 1920
 TW_THEME := portrait_hdpi

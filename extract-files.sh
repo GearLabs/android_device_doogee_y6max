@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export DEVICE=pri6750_66t_m
-export VENDOR=bluboo
+export DEVICE=y6max
+export VENDOR=doogee
 
 if [ $# -eq 0 ]; then
   SRC=adb

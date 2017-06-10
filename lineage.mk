@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/bluboo/pri6750_66t_m/full_pri6750_66t_m.mk)
+$(call inherit-product, device/doogee/y6max/full_y6max.mk)
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_pri6750_66t_m
-BOARD_VENDOR := bluboo
-PRODUCT_DEVICE := pri6750_66t_m
+PRODUCT_NAME := lineage_y6max
+BOARD_VENDOR := doogee
+PRODUCT_DEVICE := y6max
 
-PRODUCT_GMS_CLIENTID_BASE := android-bluboo
+PRODUCT_GMS_CLIENTID_BASE := android-doogee
 
-PRODUCT_MANUFACTURER := Bluboo
-PRODUCT_MODEL := Bluboo Maya Max
+PRODUCT_MANUFACTURER := Doogee
+PRODUCT_MODEL := Doogee Y6 Max
 
-PRODUCT_BRAND := Bluboo
-TARGET_VENDOR := bluboo
-TARGET_VENDOR_PRODUCT_NAME := MayaMax
-TARGET_VENDOR_DEVICE_NAME := pri6750_66t_m
+PRODUCT_BRAND := Doogee
+TARGET_VENDOR := doogee
+TARGET_VENDOR_PRODUCT_NAME := Y6Max
+TARGET_VENDOR_DEVICE_NAME := y6max

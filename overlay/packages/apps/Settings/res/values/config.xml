@@ -15,14 +15,6 @@
 -->
 
 <resources>
-    <!-- SAR Level for a device -->
-    <!-- Must be overlaid by device -->
-    <bool name="config_show_sar_enable" translatable="false">true</bool>
-    <!-- Maximum Specific Absorption Rate for head -->
-    <string name="sar_head_level" translatable="false">0.226</string>
-    <!-- Maximum Specific Absorption Rate for body -->
-    <string name="sar_body_level" translatable="false">0.987</string>
-
     <!-- Display ro.product.name above Device model -->
     <bool name="config_displayDeviceName">true</bool>
 </resources>
